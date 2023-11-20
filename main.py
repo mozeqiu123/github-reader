@@ -79,6 +79,7 @@ def read_all_files(directory):
                 try:
                     with open(file_path, "r", encoding="utf-8") as file:
                         print("打开文件")
+                        print(f"文件名：{file_name}")
                         all_text += f"File: {file_name}\n\n" + file.read() + "\n\n"
                 except UnicodeDecodeError:
                     print(f"无法以UTF-8编码读取文件: {file_path}")
