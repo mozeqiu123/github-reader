@@ -86,7 +86,6 @@ def read_all_files(directory):
                     print(f"无法以UTF-8编码读取文件: {file_path}")
                 except Exception as e:
                     print(f"读取文件时发生错误: {file_path}, 错误: {e}")
-    print(f"all_text:{all_text}")
     return all_text
 
 
