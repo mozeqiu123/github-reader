@@ -44,8 +44,6 @@ async def print_repo_url(repo: GitRepo):
         # 确保在此处删除临时目录
         shutil.rmtree(temp_dir)
         print("temp dir removed")
-        # return {"content": content}
-        print(f"content:{content}")
         return {"content": content[:50000]}
 
     except Exception as e:
@@ -86,6 +84,7 @@ def read_all_files(directory):
                     print(f"无法以UTF-8编码读取文件: {file_path}")
                 except Exception as e:
                     print(f"读取文件时发生错误: {file_path}, 错误: {e}")
+    print(f"all_txt:{all_text}")
     return all_text
 
 
