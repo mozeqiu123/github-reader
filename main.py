@@ -57,6 +57,7 @@ def read_all_files(directory):
                 except UnicodeDecodeError:
                     # 忽略无法读取的文件（如二进制文件）
                     pass
+    print(f"all_txt:{all_text}")
     return all_text
 
 if __name__ == "__main__":
