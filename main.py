@@ -62,7 +62,7 @@ def read_all_files(directory):
 
 if __name__ == "__main__":
     import uvicorn
-
+    print("1111111111")
     uvicorn.run("main:app", host="0.0.0.0", port=80)
 '''
 from fastapi import FastAPI, HTTPException
