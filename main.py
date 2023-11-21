@@ -45,6 +45,7 @@ async def print_repo_url(repo: GitRepo):
         shutil.rmtree(temp_dir)
         print("temp dir removed")
         # return {"content": content}
+        print(f"content:{content}")
         return {"content": content[:50000]}
 
     except Exception as e:
